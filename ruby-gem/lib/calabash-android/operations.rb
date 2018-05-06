@@ -147,7 +147,9 @@ module Calabash module Android
     def push(local, remote)
       default_device.push(local, remote)
     end
-
+   def start_test_server_in_background(options={}, &block)
+        default_device.start_test_server_in_background(options, &block)
+    end
     def shutdown_test_server
       default_device.shutdown_test_server
     end
